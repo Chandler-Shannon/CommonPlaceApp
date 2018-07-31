@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:orientation="vertical"
+    tools:context=".Home">
+
+
+
+    <!-- Button to go to Category Activity -->
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:text="Categories"
+        android:onClick="goToCategories"/>
+
+    <!-- Button to go to select a passage at random -->
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:text="Random Passage"
+        android:onClick="openPassage"/>
+
+    <!-- Display of Random Passage? Another one or the same as above? Also button to navigate to it? Possibly just put this in the notification -->
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:text="Passage Entry"
+        android:onClick="openNewPassage"/>
+
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:text="Journal Entry"
+        android:onClick="openNewPassage"/>
+
+    <!-- EditText to search (by author? or what the passage says? by tags?) and Recent Searches displayed below (retains a history -->
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:text="Search" />
+
+    <TextView
+        style="@style/HeaderTextStyle"
+        android:text="Recent Searches..." />
+
+</LinearLayout>
